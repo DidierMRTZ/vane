@@ -1,0 +1,43 @@
+.container {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .text {
+    opacity: 0; /* Inicialmente oculta el texto */
+    animation: appear 1s forwards; /* Define la animación 'appear' durante 1 segundo */
+  }
+  
+  /* Define la animación 'appear' */
+  @keyframes appear {
+    from {
+      opacity: 0; /* Oculta la letra al principio de la animación */
+    }
+    to {
+      opacity: 1; /* Muestra la letra al final de la animación */
+    }
+  }
+  
+  /* Aplica un retardo a cada letra para que aparezcan una por una */
+  .text:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .text:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .text:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .text:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  .text:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  

@@ -1,0 +1,145 @@
+body {
+    background-color: rgb(19, 19, 45);
+    padding:40vh 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .contenido {
+    text-align: center;
+    margin-left: -50px;
+    position: relative;
+  }
+  h4 {color: white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 120px;
+    font-weight: 600;
+    animation: palpitation 2s ease-in-out infinite;
+    line-height: 4rem;
+    position: fixed;
+    margin-left: 600px;
+  }
+
+  .corazon {
+    animation: latido 1s infinite;
+    background-color: red;
+    display: inline-block;
+    height: 60px;
+    margin: 0 10px;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute; 
+    left: 45%; 
+    top: 45%;
+    width: 60px;
+    box-shadow: 0px 0px 150px #f20044;
+  }
+  
+  .corazon:before,
+  .corazon:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 60px;
+    position: absolute;
+    width: 60px;
+  }
+  
+  .corazon:before {
+    top: -25px;
+    left: 0;
+  }
+  
+  .corazon:after {
+    left: 25px;
+    top: 0;
+  }
+  
+  @keyframes latido {
+    0%
+    {
+      transform: scale( 1 )
+        rotate(-45deg);    
+    }
+    20%
+    {
+      transform: scale( 1.25 )
+        rotate(-45deg);  
+    }
+     40%
+    {
+      transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+  }
+
+.container{
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -200px;
+}
+.container > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #ab83a9;
+        text-shadow: none;
+    }
+}
+.container > span:nth-child(2){
+    animation-delay: .2s ;
+}
+.container > span:nth-child(3){
+    animation-delay: .4s ;
+}
+.container > span:nth-child(4){
+    animation-delay: .6s;
+}
+.container > span:nth-child(5){
+    animation-delay: .8s;
+}
+.container > span:nth-child(6){
+    animation-delay: 1s;
+}
+.container > span:nth-child(7){
+    animation-delay: 1.2s;
+}
+.container > span:nth-child(8){
+    animation-delay: 1.4s;
+}
+.container > span:nth-child(9){
+    animation-delay: 1.6s;
+}
+.container > span:nth-child(9){
+  animation-delay: 1.8s;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+
+
+@keyframes palpitation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
